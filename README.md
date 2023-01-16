@@ -1,0 +1,10 @@
+# ataluza-macro
+atualizador de macros
+
+
+import xlwings as xw
+
+wb = xw.Book(r'local arquivo')
+atualizar = wb.macro('nome da macro')
+wb.save()
+wb.close()
